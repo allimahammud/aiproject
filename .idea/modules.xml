@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/project-expanded-template.iml" filepath="$PROJECT_DIR$/.idea/project-expanded-template.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/aiproject.iml" filepath="$PROJECT_DIR$/.idea/aiproject.iml" />
+>>>>>>> 5056fce7c2b1fa8d8b6d2b8e245b2a1948728984
     </modules>
   </component>
 </project>

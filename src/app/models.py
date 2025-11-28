@@ -9,6 +9,7 @@ class User(Base):
     password_hash = Column(String, nullable=False)
     role = Column(String, default="user")  # simple RBAC role
     is_active = Column(Boolean, default=True)
+    name = Column(String, nullable=False)
 
     items = relationship("Item", back_populates="owner")
 

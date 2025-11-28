@@ -1,0 +1,19 @@
+    1  run tests
+    2  cd cd ..
+    3  cd ..
+    4  cd project-expanded-template
+    5  run tests
+    6  pytest -q
+    7  pip install httpx
+    8  pytest -q
+    9  pwd
+   10  cd tests/
+   11  pytest -q
+   12  cd ..
+   13  pwd
+   14  pytest -q
+   15  pytest -q
+   16  pytest -q
+   17  uvicorn src.app.main:app --reload
+   18  uvicorn src.app.main:app --reload
+   19  history > 28_Nov_25_2.txt

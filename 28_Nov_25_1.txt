@@ -1,0 +1,17 @@
+    1  alembic upgrade head
+    2  alembic revision --autogenerate -m "add name column to users"
+    3  pip install --upgrade alembic
+    4  alembic revision --autogenerate -m "add name column to users"
+    5  ls -R | grep alembic
+    6  pip uninstall alembic -y
+    7  pip uninstall SQLAlchemy -y
+    8  pip install SQLAlchemy alembic
+    9  alembic revision --autogenerate -m "add name column to users"
+   10  alembic revision --autogenerate -m "add name column to users"
+   11  alembic upgrade head
+   12  alembic stamp head
+   13  alembic revision --autogenerate -m "add name column to users"
+   14  cp alembic/env.py alembic/env_backup.py
+   15  alembic revision --autogenerate -m "add name column to users"
+   16  alembic upgrade head
+   17  history > 28_Nov_25_1.txt

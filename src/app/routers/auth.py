@@ -21,7 +21,7 @@ def register(user: schemas.UserCreate, db: Session = Depends(get_db)):
     if existing:
         raise HTTPException(status_code=400, detail="User already exists")
     hashed = security.hash_password(user.password)
-    u = models.User(email=user.email, password_hash=hashed)
+    u = models.User(email=user.email, password_hash=hashed, name=user.name)
     db.add(u)
     db.commit()
     db.refresh(u)
@@ -46,6 +46,6 @@ def refresh(token: str = Depends(oauth2_scheme)):
         sub = payload.get("sub")
         access = security.create_access_token(sub)
         refresh = security.create_refresh_token(sub)
-        return {"access_token": access, "token_type": "bearer", "refresh_token": refresh}
+        return {"access_token": "access", "token_type": "bearer", "refresh_token": refresh}
     except Exception:
         raise HTTPException(status_code=401, detail="Invalid refresh token")

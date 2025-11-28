@@ -1,0 +1,16 @@
+    1  uvicorn src.app.main:app --reload
+    2  uvicorn src.app.main:app --reload
+    3  uvicorn src.app.main:app --reload
+    4  uvicorn src.app.main:app --reload
+    5  pwd
+    6  cd ..
+    7  cd project-expanded-template
+    8  uvicorn src.app.main:app --reload
+    9  history > 27_nov_25_2.txt
+
+    //////// Data source//////
+    DBMS: SQLite (ver. 3.45.1)
+Case sensitivity: plain=mixed, delimited=mixed
+Driver: SQLite JDBC (ver. 3.45.1.0, JDBC4.2)
+
+Ping: 31 ms

@@ -28,7 +28,7 @@ def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(
         raise HTTPException(status_code=401, detail="Invalid token")
 
 @router.get("/", response_model=list[schemas.Item])
-def list_items(db: Session = Depends(get_db)):
+def list_items(current_user: models.User = Depends(get_current_user),db: Session = Depends(get_db)):
     return ItemService.list_items(db)
 
 @router.post("/", response_model=schemas.Item)

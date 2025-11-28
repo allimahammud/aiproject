@@ -1,0 +1,41 @@
+    1  pip install -r requirements.txt
+    2  uvicorn src.app.main:app --reload
+    3  pip install 'pydantic[email]'
+    4  uvicorn src.app.main:app --reload
+    5  pip install python-multipart
+    6  uvicorn src.app.main:app --reload
+    7  uvicorn src.app.main:app --reload
+    8  git status
+    9  git config --list
+   10  git init
+   11   git remote add origin https://github.com/allimahammud/aiproject.git
+   12  git reemote -v
+   13  git remote -v
+   14  git branch -M main
+   15  git push -u origin main
+   16  git status
+   17  git add .
+   18  git add .
+   19  git commit -m "Project Upload"
+   20  git push -u origin main
+   21  git pull origin main
+   22  git merge origin main
+   23  git push -u origin main
+   24  git status
+   25  git add .
+   26  git status
+   27  git push -u origin main
+   28  git pull origin main
+   29  git pull origin main
+   30  git pull origin main --allow-unrelated-histories
+   31  git push -u origin main
+   32  uvicorn src.app.main:app --reload
+   33  git push -u origin main
+   34  git add .
+   35  git commit -m "Merge remote-tracking branch 'origin/main'"
+   36  git push origin main
+   37  uvicorn src.app.main:app --reload
+   38  uvicorn src.app.main:app --reload
+   39  history -> 28_nov_25.txt
+   40  history -> 28_nov_25.txt
+   41  history > 28_nov_25.txt
